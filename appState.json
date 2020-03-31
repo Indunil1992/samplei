@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "samplei.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 3,
+          "column": 49
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -25,10 +25,19 @@
           {
             "resourceName": "cognitoIndunilUserPool",
             "config": {
-              "triggerType": "CustomMessage"
+              "triggerType": "PreSignUp"
             }
           }
-        ]
+        ],
+        "testCases": {
+          "ca845be7-c9a8-45b1-aef0-d05045546689": {
+            "id": "ca845be7-c9a8-45b1-aef0-d05045546689",
+            "name": "Test event",
+            "functionId": "4150ef41-5516-413c-85c7-5844ddecd359",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
@@ -41,7 +50,8 @@
         "type": "CognitoIdentityServiceProvider",
         "config": {
           "mode": 0,
-          "name": "IndunilUserPool",
+          "name": "Indunil-User-Pool",
+          "arn": "arn:aws:cognito-idp:us-east-1:318300609668:userpool/undefined",
           "userPool": {
             "Name": "Indunil-User-Pool",
             "isNew": true,
@@ -220,7 +230,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585660371744
+    "lastSave": 1585660616953
   },
   "VCS_STATE": {
     "provider": "GitHub",
